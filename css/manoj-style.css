@@ -82,7 +82,7 @@ body {
 height: 700px;
 padding-top: 131px;
 text-align: left;
-padding-left: 70px !important;
+padding-left: 70px ;
 }
 .slides1{
     background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/slider-01.jpg);
@@ -104,8 +104,8 @@ padding-left: 70px !important;
 
 @media only screen and (max-width: 679px){
 	.slides1 h1,.slides2 h1,.slides3 h1,.slides4 h1{
-font-size: 30px;
-padding-left: 0px;
+font-size: 30px !important;
+padding-left: 0px !important;
 }
 .slides1,.slides2,.slides3,.slides4{
     padding-left: 40px; 
@@ -411,7 +411,6 @@ border-color: #333333;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px;
 }
 
 @media (min-width: 768px) {
