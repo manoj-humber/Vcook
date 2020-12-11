@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Header-->
+
+<head>
+
+  <meta charset="UTF-8">
+  <!-- Site Metas -->
+  <title>Profile page </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Restaurant, Dinner, Lunch, Drinks, Food">
+  <meta name="description" content="Online restaurant to fulfil the requirements of foodie people">
+  <meta name="author" content="Team Ignito">
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="./css/profile.css">
+  <link rel="stylesheet" href="./css/navbar-footer.css">
+
+
+</head>
+<!--Header end-->
+
+<style>
+ 
+</style>
+<!--Body start -->
+
+<body id="profile-main">
+
+  <!---header-->
+  <header id="navbar">
+    <nav class="navbar-container container">
+
+      <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
+
+        <!---header-->
+        <header id="navbar">
+          <nav class="navbar-container container">
+
+            <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
+
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-menu">
+              <ul class="navbar-links">
+                <li class="navbar-item"><a class="navbar-link" href="home.html">Home</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="navbar-item"><a class="navbar-link" href="reservation.html">Bookings</a></li>
+                <li><a href="home.html" class="home-link">
+                    <div class="navbar-logo" id="logo"></div>
+                  </a></li>
+                <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="category.html">Category</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="contact.html">ContactUs</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+        <!--header end-->
+        <main>
+          <div id="mainwrap">
+            <div>
+
+              <ul id="menu">
+                <li><a class="profile" href="#profile" title="Profile">Profile</a><span>Profile Information</span></li>
+                <li><a class="orders" href="#orders" title="orders">Pervious orders</a><span>Professional
+                    information</span>
+                </li>
+
+                <li><a class="contact" href="#contact" title="Contact">Saved Location</a><span>Saved location</span>
+                </li>
+              </ul>
+            </div>
+            <div style="clear:both"></div>
+            <div id="content">
+              <div id="profile" class="section">
+                <div class="column col4">
+                  <table id="bioinfo">
+                    <tbody>
+                      <tr>
+                        <td class="odd">Name</td>
+                        <td class="even">Jane Medford</td>
+                      </tr>
+                      <tr>
+                        <td class="odd">Address</td>
+                        <td class="even">Malet St,Bloomsbury, London WC1E 7HU
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="odd">customerid</td>
+                        <td class="even">n9273-i3u</td>
+                      </tr>
+                      <tr>
+                        <td class="odd">Email</td>
+                        <td class="even">mefo@mysite.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="column col4 pl-50">
+                  <img class="user-img" src="./images/user1.png" alt="userimage" width="250" height="250" />
+                </div>
+              </div>
+
+              <div id="orders" class="section">
+                <table id="cv">
+                  <tbody>
+                    <tr>
+                      <td class="col2">
+                        <div class="date">April 2nd 2020</div>
+                      </td>
+                      <td class="col6 pl-30">
+                        <p class="ordername">Hamburger</p>
+                        <!-- <p class="title">Paid:$50</p> -->
+                        <p class="description">Items:2</p>
+                        <p class="description">size:medium</p>
+                      </td>
+                      <td class="col2 pl-30">
+                        <a class="order-again">Order again</a>
+                      </td>
+                      <td class="col2 pl-30">
+                        <a id="detail" onclick="return orderDetail('ham')" class="order-again">Order Deatils</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col2">
+                        <div class="date">March 25th 2020 </div>
+                      </td>
+                      <td class="col4 pl-30">
+                        <p class="ordername">Veg Hyderabadi Biryani</p>
+                        <!-- <p class="title">Paid:$30</p> -->
+                        <p class="description">Items:1</p>
+                        <p class="description">size:small</p>
+                      </td>
+                      <td class="col2 pl-30">
+                        <a class="order-again">Order again</a>
+                      </td>
+                      <td class="col2 pl-30">
+                        <a id="detail2" onclick="return orderDetail('bry')" class="order-again">Order Deatils</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col2">
+                        <div class="date">Feb 23rd 2020 </div>
+                      </td>
+                      <td class="col6 pl-30">
+                        <p class="ordername">Lasanga</p>
+                        <!-- <p class="title">Piad:$25</p> -->
+                        <p class="description">Items:4</p>
+                        <p class="description">size:medium</p>
+                      </td>
+                      <td class="col2 pl-30">
+                        <a class="order-again">Order again</a>
+                      </td>
+                      <td class="col2 pl-30">
+                        <a id="detail3" onclick="return orderDetail('las')" class="order-again">Order Deatils</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="contact" class="section">
+                <div class="column col5 pl-50">
+                  <h3>My Location</h3>
+                  <iframe
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    width="700" height="600"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!--Footer start-->
+
+        <footer class="footer-area bg-f">
+
+          <div class="row footer-inner">
+            <div class="about" style="width: 20%;">
+              <h3>About Us</h3>
+              <p>VCook is the leading food ordering and delivery platform in India. The innovative technology, large and
+                nimble delivery service, and exceptional consumer focus including lightning fast deliveries.</p>
+
+            </div>
+            <div class="subscribe">
+              <h3>Subscribe</h3>
+              <div class="subscribe_form">
+                <form class="subscribe_form">
+                  <input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+                  <button type="submit" class="submit">SUBSCRIBE</button>
+                  <div class="clearfix"></div>
+                </form>
+              </div>
+              <ul class="list-inline f-social">
+                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="contact-info">
+              <h3>Contact information</h3>
+              <p class="lead">Main Street, Lorem Tower, MO, Columbia, 508000</p>
+              <p class="lead"><a href="#">+01 2000 800 9999</a></p>
+              <p><a href="#"> vcook@gmail.com</a></p>
+            </div>
+            <div class="opening">
+              <h3>Opening hours</h3>
+              <p><span class="text-color">Monday: </span>Closed</p>
+              <p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
+              <p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+              <p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="container">
+              <div class="row">
+                <div class="large-inner">
+                  <p class="company-name">All Rights Reserved. &copy; 2020||2021 <a href="#">VCOOK</a> &nbsp;
+                    Design By :
+                    IGNITO </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="hamModal" class="modal">
+            <div id="color" class="modal-content">
+              <span id="cl1" class="close">&times;</span>
+              <h3>Order Details</h3>
+              <hr>
+              <p>Ordered from food bites:Hamburger</p><br>
+              <table class="order-details">
+                <tr>
+                  <td>Items<p>2</p></td>
+                  <td>Price<p>50$</p></td>
+                  <td>Tax:<p>10$</p></td>
+                  <td class="equal"><br> <p>=</p></td>
+                  <td>Total:<p>60$</p></td>
+                </tr>
+              </table>
+            </div>
+            </div>
+            <div id="bryModal" class="modal">
+              <div id="color" class="modal-content">
+                <span id="cl2" class="close">&times;</span>
+                <h3>Order Details</h3>
+                <hr>
+                <p>Ordered from food bites:Brayani</p><br>
+                <table class="order-details">
+                  <tr>
+                    <td>Items<p>1</p></td>
+                    <td>Price<p>12$</p></td>
+                    <td>Tax:<p>3$</p></td>
+                    <td class="equal"><br> <p>=</p></td>
+                    <td>Total:<p>15$</p></td>
+                  </tr>
+                </table>
+              </div>
+              </div>
+              <div id="lasModal" class="modal">
+                <div id="color" class="modal-content">
+                  <span id="cl3" class="close">&times;</span>
+                  <h3>Order Details</h3>
+                  <hr>
+                  <p>Ordered from food bites:Lasanga</p><br>
+                  <table class="order-details">
+                    <tr>
+                      <td>Items<p>4</p></td>
+                      <td>Price<p>70$</p></td>
+                      <td>Tax:<p>20$</p></td>
+                      <td class="equal"><br> <p>=</p></td>
+                      <td>Total:<p>90$</p></td>
+                    </tr>
+                  </table>
+                </div>
+                </div>
+        </footer>
+        <!--Footer end-->
+        <script type="text/javascript" src="js/manoj-main.js"></script>
+
+        <script src="js/navbar.js"></script>
+</body>
+<!--Body end-->
+
+</html>
