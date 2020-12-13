@@ -20,7 +20,7 @@ body {
   overflow: hidden;
   /* margin: 0 auto; */
   width: 100% !important;
-  height: 400px;
+  height: 542px;
   text-align: center;
 }
 
@@ -113,6 +113,7 @@ padding-left: 0px !important;
 }
 
 }
+
 @media only screen and (max-width: 420px){
 
   .slides-para{
@@ -128,8 +129,14 @@ padding-left: 0px !important;
     height: 500px;
 }
 }
+
+@media only screen and (min-width: 779px){
+.prevarrow2,.nextarrow2{
+  display: none !important;
+}
+
+}
 .slides-inner{
-  /* padding-top: 132px; */
   text-align: left;
 
 }
@@ -775,4 +782,14 @@ margin-bottom: 15px;
   text-decoration: none;
   transition: opacity 0.2s ease-out;
   font-size: 30px;
+  }
+
+
+
+  .txt-type > .txt {
+    border-right: 0.2rem solid #777;
+  }
+
+  .txt-type{
+  color: white;
   }
